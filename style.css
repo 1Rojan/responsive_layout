@@ -1,20 +1,18 @@
 html body{
 	margin: 0 ;
-	
-
 }
-/*.container{
+.container{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-}*/
+}
 
 header{
 	background: #4f8ef2;
-	position: relative;
+	/*position: relative;*/
 	width: 100%;
 	top:0;
-	height:50px;
+	height:70px;
+	z-index: 1;
 	
 }
 
@@ -22,6 +20,7 @@ header{
 .logo{
 	position: absolute;
 	line-height: 40px;
+	flex-wrap: wrap;
 }
 
  .fa-cloud{
@@ -31,14 +30,14 @@ header{
 }
 
 
-ul li{
+.monitor ul li{
 	display: inline;
 	list-style: none;
 	margin-left: 30px;
 	color: white;
 }
 
-nav{
+.monitor{
 	float: right;
 }
 
@@ -48,66 +47,114 @@ nav{
 	box-sizing: border-box;
 	background: #4f8ef2;
 	display: flex;
-	position: absolute;
-
+	flex-wrap: wrap;
 }
 
 
-#top aside{
+#top .left{
+	/*display: flex;*/
+	/*flex-direction: column;*/
 	margin-top: 50px;
 	float: left;
 	width: 40%;
 	padding: 50px;
 }
 
+#top .mobile_right{
+display: none;	
+}
+#top .desktop_right{
+	width:30%;
+	/*display: flex;
+	flex-direction: column;*/
+	margin-top: auto;
+	/*flex-wrap: wrap;*/
+	height: auto;
+}
+
+ #top>.right>#responsive{
+	height: auto;
+}
+
+
 h1{
 	color: white;
 	font-size: 35px;
 }
 
-#top_image{
+
+#mid{
+	box-sizing: border-box;
+	
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#mid .left{
+	margin-top: 50px;
+	float: left;
+	width: 15%;
+	padding: 50px;
+	
+}
+
+#mid .right{
+	width:50%;
+	display: flex;
+	flex-direction: column;
 	margin-top: auto;
-	width: auto;
+	flex-wrap: wrap;
 }
-
-#about{
-	clear: left;
-}
-
-
 .mobile{
   display: none;
 }
 
 
-@media screen and (min-width: 0px) and (max-width: 600px){
+@media screen and (min-width: 0) and (max-width: 600px){
+   .monitor{
+    display: none;
+  }
+
   .mobile{
-    display: block;
+  	display: block;
+  	margin-top:60px;
+  	color: white;
+  	
   }
-  
-  nav>ul{
-    width: 80%;
-    display: none;
-    clear:left;
+
+  .mobile ul li{
+  	list-style: none;
+
+
   }
-  
-  nav:hover ul{
-    display: block;
-  }
-  nav ul li{
-    width: 100%;
-    text-align: center;
-      
-  }
-  
-  .burger{
-    background: #303030;
-    color: #63a870;
-    padding: 10px;
-    border-radius: 3px;
-    float:left;
-  }
-  .monitor{
-    display: none;
-  }
+.logo{
+	position: absolute;
+	line-height: 40px;
+	flex-wrap: wrap;
 }
+
+ .fa-cloud{
+	font-size: 20px;
+	color: white;
+	margin-left: 30px;
+	height: auto;
+}
+
+#top .desktop_right{
+	display: none;
+}
+#top .mobile_right{
+	display: block;
+	/*display: flex;
+	flex-direction: column;*/
+	margin-top: auto;
+	/*flex-wrap: wrap;*/
+	height: auto;
+}
+}
+
+
+
+  
+
+
