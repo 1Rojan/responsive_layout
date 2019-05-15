@@ -1,0 +1,113 @@
+html body{
+	margin: 0 ;
+	
+
+}
+/*.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}*/
+
+header{
+	background: #4f8ef2;
+	position: relative;
+	width: 100%;
+	top:0;
+	height:50px;
+	
+}
+
+
+.logo{
+	position: absolute;
+	line-height: 40px;
+}
+
+ .fa-cloud{
+	font-size: 30px;
+	color: white;
+	margin-left: 30px;
+}
+
+
+ul li{
+	display: inline;
+	list-style: none;
+	margin-left: 30px;
+	color: white;
+}
+
+nav{
+	float: right;
+}
+
+
+#top{
+	clear: right;
+	box-sizing: border-box;
+	background: #4f8ef2;
+	display: flex;
+	position: absolute;
+
+}
+
+
+#top aside{
+	margin-top: 50px;
+	float: left;
+	width: 40%;
+	padding: 50px;
+}
+
+h1{
+	color: white;
+	font-size: 35px;
+}
+
+#top_image{
+	margin-top: auto;
+	width: auto;
+}
+
+#about{
+	clear: left;
+}
+
+
+.mobile{
+  display: none;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 600px){
+  .mobile{
+    display: block;
+  }
+  
+  nav>ul{
+    width: 80%;
+    display: none;
+    clear:left;
+  }
+  
+  nav:hover ul{
+    display: block;
+  }
+  nav ul li{
+    width: 100%;
+    text-align: center;
+      
+  }
+  
+  .burger{
+    background: #303030;
+    color: #63a870;
+    padding: 10px;
+    border-radius: 3px;
+    float:left;
+  }
+  .monitor{
+    display: none;
+  }
+}
