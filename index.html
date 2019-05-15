@@ -2,15 +2,18 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<div class="container">
 <header>
 	<div class="logo">
-		<h3>Digital</h3>
+		<!-- <i class="fas fa-cloud"><h3>Digital</h3></i> -->
+		<i class="fas fa-cloud">Digital</i>
 	</div>
 		
-<div class="nav">
+    <nav class="monitor">
 		<ul>
 			<li>Home</li>
 			<li>About</li>
@@ -18,27 +21,41 @@
 			<li>Contact page</li>
 			<li><button>Login</button></li>
 		</ul>
-	</div>
+	</nav>
 	
+	<nav class="mobile">
+  <i class="burger fas fa-bars"></i>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Dropdown</a></li>
+    <li><a href="#">Contact Page</a></li>
+    <li><button>Login</button></li>
+    <li><a href="#">Link1</a></li>
+  </ul>
+</nav>
 </header>
 
 <section id="top">
 	
 	<aside>
-		<h1>Welcomt to Digital</h1>
+		<h1>Welcome to Digital</h1>
 		<h1>Marketing Agency</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		consequat..container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+} Duis aute irure dolor in reprehenderit in voluptate velit esse
+		</p>
 
 		<button>Read More</button>
 		<button>Watch</button>
 	</aside>
 
-	<article id="top_image"><img src="images/image1.png"></article>
+	<article id="top_image"><img src="tron.png"></article>
 	
 </section>
 
@@ -57,8 +74,9 @@
 	
 </section>
 
-
 <footer></footer>
-
+</div>
+</div>
+</body>
 </body>
 </html>
