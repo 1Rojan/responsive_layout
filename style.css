@@ -1,6 +1,13 @@
 html body{
 	margin: 0 ;
 }
+
+a{
+	border: 1px solid white;
+	padding: 3px;
+	padding-left: 0;
+	background: #d7dfea;
+}
 .container{
 	display: flex;
 	flex-wrap: wrap;
@@ -115,6 +122,9 @@ h1{
     display: none;
   }
 
+#top{
+	width: 100%;
+}
   .mobile{
   	display: block;
   	margin-top:60px;
@@ -122,11 +132,33 @@ h1{
   	
   }
 
-  .mobile ul li{
+  .burger{
+  	margin-left: 20px;
+  	
+  }
+
+
+  nav ul li{
   	list-style: none;
+  	text-align: center;
+  	opacity: 1;
+
+  }
+
+  nav ul{
+  	display: none;
+  	padding-left: 0;
+  	background: lightblue ;
+  	opacity: 0.85;
 
 
   }
+nav:hover ul{
+    display: block;
+    width: 100%;
+  }
+
+
 .logo{
 	position: absolute;
 	line-height: 40px;
@@ -134,6 +166,7 @@ h1{
 }
 
  .fa-cloud{
+
 	font-size: 20px;
 	color: white;
 	margin-left: 30px;
@@ -151,7 +184,28 @@ h1{
 	/*flex-wrap: wrap;*/
 	height: auto;
 }
+
+#top .left{
+	/*display: flex;*/
+	/*flex-direction: column;*/
+	margin-top: 50px;
+	float: left;
+	width: 100%;
+	/*padding: 50px;*/
 }
+
+#top .desktop_right{
+	width:100%;
+	/*display: flex;
+	flex-direction: column;*/
+	margin-top: auto;
+	/*flex-wrap: wrap;*/
+	height: auto;
+	padding-left: 40px;
+}
+}
+
+
 
 
 
